@@ -55,6 +55,7 @@ crontab -e
 * * * * * /home/vboxuser/weather.sh >> /home/vboxuser/weather.log 2>&1
 ```
 
+## Скриншоты
 ### 1. Ручной запуск скрипта
 ![Терминал](screenshots/terminal.png)
 
