@@ -28,19 +28,28 @@ lab1_weather/
 ```bash
 sudo apt update
 sudo apt install -y nginx jq curl
+```
 
 ### 2. Настройка прав доступа
+```bash
 sudo chown -R $USER:$USER /var/www/html
+```
 
 ### 3. Копирование скрипта
+```bash
 cp weather.sh ~/
 chmod +x ~/weather.sh
+```
 
 ### 4. Настройка cron
+```bash
 crontab -e
+```
+
 # Добавить строку:
 ```bash
 * * * * * /home/vboxuser/weather.sh >> /home/vboxuser/weather.log 2>&1
+```
 
 ### 1. Ручной запуск скрипта
 ![Терминал](screenshots/terminal.png)
@@ -60,4 +69,4 @@ JSON API (catfact.ninja) - источник данных.
 jq - парсинг JSON.
 nginx - веб-сервер.
 cron - планировщик задач.
-EOF
+
