@@ -64,9 +64,10 @@ crontab -e
 ![Логи](screenshots/logs.png)
 
 ### Использованные технологии
+```text
 Bash - язык написания скрипта.
 JSON API (catfact.ninja) - источник данных.
 jq - парсинг JSON.
 nginx - веб-сервер.
 cron - планировщик задач.
-
+```
