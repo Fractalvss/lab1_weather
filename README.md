@@ -50,7 +50,7 @@ chmod +x ~/weather.sh
 crontab -e
 ```
 
-# Добавить строку:
+#### Добавить строку:
 ```bash
 * * * * * /home/vboxuser/weather.sh >> /home/vboxuser/weather.log 2>&1
 ```
